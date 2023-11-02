@@ -1,0 +1,98 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff; /* Màu nền của header */
+    padding: 10px 20px;
+    color: rgb(13, 201, 82); /* Màu chữ trắng */
+}
+
+.logo img {
+    width: 50px; /* Kích thước của logo */
+    height: 50px;
+}
+
+.logout a {
+    text-decoration: none;
+    color: rgb(13, 201, 82); /* Màu chữ trắng */
+}
+
+.logout a:hover {
+    text-decoration: underline; /* Hiệu ứng khi di chuột qua "Logout" */
+}
+
+.home{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(6, 6, 98);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: floralwhite;
+}
+
+.logoHome{
+    width: 30px;
+    height: 30px; 
+    line-height:50px;
+    margin: 0 10px;
+}
+.home a{
+    text-decoration: none;
+    line-height:50px;
+    font-weight: bold;
+}
+
+/* 
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin: 10px;
+    
+}
+.squareLink{ 
+    background-color: #007bff;
+    cursor: pointer;  
+
+} */
+
+.allSquare {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.square {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #007bff;
+    cursor: pointer;
+    min-height: 200px;
+    text-align: center;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin: 5px;    
+}
+
+.text{
+    color: black;
+    font-weight: bold;
+}
+
+
+
+
+@media (max-width: 767px) {
+    .square {
+        flex: 1 1 100%;
+        min-height: auto;
+        margin:10 50px;
+    }
+}
